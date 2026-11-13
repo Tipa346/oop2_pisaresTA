@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\user\\todoapp_1\\oop_lab2\\oop_lab2.csproj": {}
+    "C:\\Users\\user\\oop2_pisaresTA\\oop_lab2\\oop_lab2.csproj": {}
   },
   "projects": {
-    "c:\\Users\\user\\todoapp_1\\oop_lab2\\oop_lab2.csproj": {
+    "C:\\Users\\user\\oop2_pisaresTA\\oop_lab2\\oop_lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\user\\todoapp_1\\oop_lab2\\oop_lab2.csproj",
+        "projectUniqueName": "C:\\Users\\user\\oop2_pisaresTA\\oop_lab2\\oop_lab2.csproj",
         "projectName": "oop_lab2",
-        "projectPath": "c:\\Users\\user\\todoapp_1\\oop_lab2\\oop_lab2.csproj",
+        "projectPath": "C:\\Users\\user\\oop2_pisaresTA\\oop_lab2\\oop_lab2.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\user\\todoapp_1\\oop_lab2\\obj\\",
+        "outputPath": "C:\\Users\\user\\oop2_pisaresTA\\oop_lab2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
