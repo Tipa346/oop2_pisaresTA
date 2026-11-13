@@ -1,7 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Lab2;
+using Lab2.Shapes;
 
 namespace Lab2
 {
