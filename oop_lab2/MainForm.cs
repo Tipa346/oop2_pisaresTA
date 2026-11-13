@@ -9,20 +9,19 @@ namespace Lab2
     {
         private readonly Drawing _drawing = new Drawing();
 
-        private Panel panelCanvas;
+        private Panel panelCanvas = null!;
 
-        private Button btnLine;
-        private Button btnRect;
-        private Button btnEllipse;
-        private Button btnPencil;
+        private Button btnLine = null!;
+        private Button btnRect = null!;
+        private Button btnEllipse = null!;
+        private Button btnPencil = null!;
 
-        private Button btnColor;
-        private Button btnUndo;
-        private Button btnClear;
-        private Button btnSave;
-        private Button btnOpen;
-
-        private NumericUpDown numWidth;
+        private Button btnColor = null!;
+        private Button btnUndo = null!;
+        private Button btnClear = null!;
+        private Button btnSave = null!;
+        private Button btnOpen = null!;
+        private NumericUpDown numWidth = null!;
 
         private string _currentTool = "Line";
 
@@ -30,7 +29,7 @@ namespace Lab2
 
         private int _currentWidth = 2;
 
-        private Shape _currentShape;
+        private Shape? _currentShape;
 
         private bool _isDrawing = false;
 
