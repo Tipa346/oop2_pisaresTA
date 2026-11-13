@@ -50,7 +50,6 @@ namespace Lab2
             SelectTool("Line");
         }
 
-        // Создание интерфейса
         private void CreateInterface()
         {
             TableLayoutPanel mainLayout = new TableLayoutPanel();
@@ -72,7 +71,6 @@ namespace Lab2
 
             Controls.Add(mainLayout);
 
-            // Верхняя панель
             FlowLayoutPanel toolPanel = new FlowLayoutPanel();
 
             toolPanel.Dock = DockStyle.Fill;
@@ -131,7 +129,6 @@ namespace Lab2
 
             toolPanel.Controls.Add(numWidth);
 
-            // Вторая панель
             FlowLayoutPanel actionPanel = new FlowLayoutPanel();
 
             actionPanel.Dock = DockStyle.Fill;
@@ -154,20 +151,14 @@ namespace Lab2
 
             actionPanel.Controls.Add(btnUndo);
             actionPanel.Controls.Add(btnClear);
-
-            // Пустое пространство перед кнопками открытия и сохранения
             Label spacer = new Label();
 
             spacer.AutoSize = false;
 
             spacer.Width = 300;
-
             actionPanel.Controls.Add(spacer);
-
             actionPanel.Controls.Add(btnOpen);
             actionPanel.Controls.Add(btnSave);
-
-            // Холст
             panelCanvas = new Panel();
 
             panelCanvas.Dock = DockStyle.Fill;
@@ -187,7 +178,6 @@ namespace Lab2
             mainLayout.Controls.Add(panelCanvas, 0, 2);
         }
 
-        // Создание кнопки
         private Button CreateButton(string text, int width)
         {
             Button button = new Button();
@@ -203,7 +193,6 @@ namespace Lab2
             return button;
         }
 
-        // Выбор инструмента
         private void SelectTool(string tool)
         {
             _currentTool = tool;
@@ -233,7 +222,6 @@ namespace Lab2
             }
         }
 
-        // Выбор цвета
         private void BtnColor_Click(object sender, EventArgs e)
         {
             using ColorDialog dialog = new ColorDialog();
@@ -248,7 +236,6 @@ namespace Lab2
             }
         }
 
-        // Нажатие мыши
         private void PanelCanvas_MouseDown(
             object sender,
             MouseEventArgs e)
@@ -268,7 +255,6 @@ namespace Lab2
             panelCanvas.Invalidate();
         }
 
-        // Движение мыши
         private void PanelCanvas_MouseMove(
             object sender,
             MouseEventArgs e)
@@ -281,7 +267,6 @@ namespace Lab2
             panelCanvas.Invalidate();
         }
 
-        // Отпускание мыши
         private void PanelCanvas_MouseUp(
             object sender,
             MouseEventArgs e)
@@ -300,7 +285,6 @@ namespace Lab2
             panelCanvas.Invalidate();
         }
 
-        // Отрисовка холста
         private void PanelCanvas_Paint(
             object sender,
             PaintEventArgs e)
@@ -313,7 +297,6 @@ namespace Lab2
             }
         }
 
-        // Отмена последнего действия
         private void BtnUndo_Click(object sender, EventArgs e)
         {
             _drawing.Undo();
@@ -321,7 +304,6 @@ namespace Lab2
             panelCanvas.Invalidate();
         }
 
-        // Очистка
         private void BtnClear_Click(object sender, EventArgs e)
         {
             _drawing.Clear();
@@ -333,7 +315,6 @@ namespace Lab2
             panelCanvas.Invalidate();
         }
 
-        // Сохранение
         private void BtnSave_Click(object sender, EventArgs e)
         {
             using SaveFileDialog dialog = new SaveFileDialog();
@@ -355,7 +336,6 @@ namespace Lab2
             }
         }
 
-        // Открытие
         private void BtnOpen_Click(object sender, EventArgs e)
         {
             using OpenFileDialog dialog = new OpenFileDialog();
@@ -381,7 +361,6 @@ namespace Lab2
             }
         }
 
-        // Ctrl + Z
         protected override bool ProcessCmdKey(
             ref Message msg,
             Keys keyData)
